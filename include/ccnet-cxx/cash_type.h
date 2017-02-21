@@ -21,6 +21,8 @@ namespace ccnet {
 	bool operator!=(const cash_type& lhs, const cash_type& rhs);
 	bool operator<(const cash_type& lhs, const cash_type& rhs);
 	bool operator>(const cash_type& lhs, const cash_type& rhs);
+	bool operator<=(const cash_type& lhs, const cash_type& rhs);
+	bool operator>=(const cash_type& lhs, const cash_type& rhs);
 
 }
 

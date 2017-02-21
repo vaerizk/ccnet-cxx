@@ -24,3 +24,11 @@ bool ccnet::operator>(const cash_type& lhs, const cash_type& rhs) {
 
 	return lhs.denomination > rhs.denomination;
 }
+
+bool ccnet::operator<=(const cash_type& lhs, const cash_type& rhs) {
+	return (lhs < rhs) || (lhs == rhs);
+}
+
+bool ccnet::operator>=(const cash_type& lhs, const cash_type& rhs) {
+	return (lhs > rhs) || (lhs == rhs);
+}
